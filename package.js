@@ -5,6 +5,10 @@ Package.describe({
   git: 'https://github.com/bmclain/meteor-ebay-api.git'
 });
 
+Npm.depends({
+  'ebay-api': '1.12.0'
+});
+
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
   api.use('meteorhacks:npm@1.5.0');
